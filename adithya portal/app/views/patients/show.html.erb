@@ -1,0 +1,15 @@
+<h1><%= @patient.name %></h1>
+<p>
+  <strong>Date of Birth:</strong>
+  <%= @patient.dob %>
+</p>
+<p>
+  <strong>Gender:</strong>
+  <%= @patient.gender %>
+</p>
+<p>
+  <strong>Contact:</strong>
+  <%= @patient.contact %>
+</p>
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
